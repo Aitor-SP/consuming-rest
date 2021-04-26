@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.6.0/css/bootstrap.min.css}"/>
+    <title>Los Quotazos</title>º
+</head>
+<body>
+<div class="container-fluid bg-dark text-white d-flex justify-content-center">
+    <h2>MP3-UF6 TREMENDO QUOTAZO</h2>
+</div>
+<div class="container-fluid border pt-2 d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://source.unsplash.com/random" alt="quote image cap">
+        <div class="card-body">
+            <h5 class="card-title">Quote del día</h5>
+            <p class="card-text" th:text="${quote}"></p>
+            <a href="#" class="btn btn-primary" onclick="window.location.reload();">Refresh</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
